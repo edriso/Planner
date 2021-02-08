@@ -1,22 +1,22 @@
 {
   "projects": [
     {
-      "id": 1,
+      "id": 0,
       "title": "Create new homepage banner",
       "details": "Lorem ipsum",
       "completed": false
     },
     {
-      "id": 2,
+      "id": 1,
       "title": "Make marketing email",
       "details": "Lorem ipsum",
-      "completed": true
+      "completed": false
     },
     {
       "title": "Finish this project",
-      "details": "Thanks, The net ninja!\nthis is the course link:\n\"https://www.udemy.com/course/build-web-apps-with-vuejs-firebase\"",
+      "details": "Thank you, The net ninja!",
       "completed": true,
-      "id": 3
+      "id": 2
     }
   ]
 }

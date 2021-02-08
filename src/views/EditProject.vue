@@ -27,7 +27,11 @@ export default {
     return {
       title: "",
       details: "",
-      uri: "http://localhost:3000/projects/" + this.id,
+      // uri: "http://localhost:3000/projects/" + this.id,
+      uri:
+        "https://plan-things-default-rtdb.firebaseio.com/projects/" +
+        this.id +
+        ".json",
     };
   },
 

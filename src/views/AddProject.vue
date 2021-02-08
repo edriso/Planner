@@ -36,7 +36,8 @@ export default {
         completed: false,
       };
 
-      fetch("http://localhost:3000/projects", {
+      // fetch("http://localhost:3000/projects", {
+      fetch("https://plan-things-default-rtdb.firebaseio.com/projects.json", {
         method: "POST",
         // header is saying we are sending data of json type
         headers: { "Content-Type": "application/json" },
@@ -89,7 +90,7 @@ textarea {
 form button {
   display: block;
   margin: 20px auto 0;
-  background-color: #00ce89;
+  background-color: #25d483;
   color: #fff;
   padding: 10px;
   border: 0;

@@ -30,7 +30,11 @@ export default {
   data() {
     return {
       showDetails: false,
-      uri: "http://localhost:3000/projects/" + this.project.id,
+      // uri: "http://localhost:3000/projects/" + this.project.id,
+      uri:
+        "https://plan-things-default-rtdb.firebaseio.com/projects/" +
+        this.project.id +
+        ".json",
     };
   },
 
@@ -69,7 +73,7 @@ export default {
   padding: 0.625rem 1.25rem;
   border-radius: 0.25rem;
   box-shadow: 0.0625rem 0.125rem 0.1875rem rgba(0, 0, 0, 0.05);
-  border-left: 0.25rem solid #e90074;
+  border-left: 0.25rem solid #f9483e;
   transition: border-color 150ms ease-in-out;
 }
 
@@ -100,10 +104,10 @@ export default {
 }
 
 .project.completed {
-  border-left-color: #00ce89;
+  border-left-color: #25d483;
 }
 
 .project.completed .icons .done {
-  color: #00ce89;
+  color: #25d483;
 }
 </style>

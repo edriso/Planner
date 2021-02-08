@@ -51,18 +51,17 @@ export default {
         return project.id !== projectId;
       });
     },
-
     handleComplete(projectId) {
       let p = this.projects.find((project) => {
         return project.id === projectId;
       });
-
       p.completed = !p.completed;
     },
   },
 
   mounted() {
-    fetch("http://localhost:3000/projects")
+    // fetch("http://localhost:3000/projects")
+    fetch("https://plan-things-default-rtdb.firebaseio.com/projects.json")
       .then((res) => res.json())
       .then((data) => (this.projects = data))
       .catch((err) => console.log(err.message));

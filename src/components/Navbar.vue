@@ -26,7 +26,7 @@ export default {
 }
 
 .navbar a.router-link-active {
-  border-bottom: 2px solid #00ce89;
+  border-bottom: 2px solid #25d483;
   padding-bottom: 4px;
 }
 </style>
