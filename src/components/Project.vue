@@ -1,7 +1,7 @@
 <template>
   <div class="project" :class="{ completed: project.completed }">
     <div class="actions">
-      <h3 @click="toggleDetails">
+      <h3 :class="{ hasDetails: project.details }" @click="toggleDetails">
         {{ project.title }}
       </h3>
 
@@ -96,7 +96,7 @@ export default {
   align-items: center;
 }
 
-.actions h3 {
+.actions h3.hasDetails {
   cursor: pointer;
 }
 
