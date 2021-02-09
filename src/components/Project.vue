@@ -63,6 +63,19 @@ export default {
         .catch((err) => console.log(err));
     },
   },
+
+  // for firebase database
+  // mounted() {
+  //   fetch(this.uri, {
+  //     method: "PATCH",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({ id: 0 }),
+  //   })
+  //     .then(() => {
+  //       this.$emit("complete", this.project.id);
+  //     })
+  //     .catch((err) => console.log(err));
+  // },
 };
 </script>
 

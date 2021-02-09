@@ -60,10 +60,23 @@ export default {
   },
 
   mounted() {
+    // // json-server
     // fetch("http://localhost:3000/projects")
+    //   .then((res) => res.json())
+    //   .then((data) => (this.projects = data))
+    //   .catch((err) => console.log(err.message));
+
+    // firebase db
     fetch("https://plan-things-default-rtdb.firebaseio.com/projects.json")
       .then((res) => res.json())
-      .then((data) => (this.projects = data))
+      .then((data) => {
+        var projectsArray = [];
+        for (let key in data) {
+          data[key].id = key;
+          projectsArray.push(data[key]);
+        }
+        this.projects = projectsArray;
+      })
       .catch((err) => console.log(err.message));
   },
 };
