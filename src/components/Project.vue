@@ -100,6 +100,11 @@ export default {
   cursor: pointer;
 }
 
+.actions .icons {
+  min-width: 70px;
+  margin-left: 10px;
+}
+
 .actions .icons span {
   font-size: 18px;
   cursor: pointer;
